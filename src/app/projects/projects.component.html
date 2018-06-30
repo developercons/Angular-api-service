@@ -1,0 +1,18 @@
+
+<div class="container">
+      <div class="col-md-6 col-xs-12" *ngFor="let info of getInfo">
+        <div class="panel panel-default">
+          <div class="panel-heading">{{info.post.project_id}}. {{info.post.project_name}}</div>
+          <div class="panel-body row">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                  <img src="{{staticUrl}}/{{info.post.project_image}}" class="img-thumbnail">
+              </div>
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p>Project Type : {{info.post.project_type}}</p>
+                <p>Project Language : {{info.post.LanguageName}}</p>
+                <p>Project Url : <a href="{{info.post.project_url}}" target="_blank">Click Url</a></p>
+              </div>  
+          </div>
+        </div>
+      </div> 
+</div>    
